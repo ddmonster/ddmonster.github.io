@@ -121,7 +121,7 @@
 
 
 
-  <title>python study | ddmonster的博客</title>
+  <title>ddmonster的博客</title>
   
 
 
@@ -139,7 +139,8 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -262,9 +263,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-
-  <div id="posts" class="posts-expand">
+  <section id="posts" class="posts-expand">
     
+      
 
   
 
@@ -294,7 +295,9 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">python study</h1>
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/09/05/pythonstudy/" itemprop="url">python study</a></h1>
         
 
         <div class="post-meta">
@@ -364,7 +367,9 @@
       
 
       
-        <h3 id="1-时间函数基础"><a href="#1-时间函数基础" class="headerlink" title="1.时间函数基础"></a>1.时间函数基础</h3><hr>
+        
+          
+            <h3 id="1-时间函数基础"><a href="#1-时间函数基础" class="headerlink" title="1.时间函数基础"></a>1.时间函数基础</h3><hr>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line">print(time.time())<span class="comment">#输出时间戳(一个浮点数表示从1970年1月1日午夜（历元）经过了多长时间)</span></span><br><span class="line">print(time.localtime(time.time())<span class="comment">#输出time.struct_time(tm_year=2019, tm_mon=9, tm_mday=4, tm_hour=18, tm_min=26, tm_sec=6, tm_wday=2, tm_yday=247, tm_isdst=0)</span></span><br><span class="line"><span class="comment">#可以切片引用time.localtime(time.time()[０:1]</span></span><br></pre></td></tr></table></figure>
 
 <hr>
@@ -402,6 +407,8 @@
 </ul>
 <p>输出为　</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">'__doc__'</span>, <span class="string">'__file__'</span>, <span class="string">'__name__'</span>, <span class="string">'acos'</span>, <span class="string">'asin'</span>, <span class="string">'atan'</span>, </span><br><span class="line"><span class="string">'atan2'</span>, <span class="string">'ceil'</span>, <span class="string">'cos'</span>, <span class="string">'cosh'</span>, <span class="string">'degrees'</span>, <span class="string">'e'</span>, <span class="string">'exp'</span>, </span><br><span class="line"><span class="string">'fabs'</span>, <span class="string">'floor'</span>, <span class="string">'fmod'</span>, <span class="string">'frexp'</span>, <span class="string">'hypot'</span>, <span class="string">'ldexp'</span>, <span class="string">'log'</span>,</span><br><span class="line"><span class="string">'log10'</span>, <span class="string">'modf'</span>, <span class="string">'pi'</span>, <span class="string">'pow'</span>, <span class="string">'radians'</span>, <span class="string">'sin'</span>, <span class="string">'sinh'</span>, </span><br><span class="line"><span class="string">'sqrt'</span>, <span class="string">'tan'</span>, <span class="string">'tanh'</span>]</span><br><span class="line"><span class="comment">#在这里，特殊字符串变量__name__指向模块的名字，__file__指向该模块的导入文件名</span></span><br></pre></td></tr></table></figure>
+          
+        
       
     </div>
     
@@ -416,38 +423,14 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/study/" rel="tag"># study</a>
-          
-            <a href="/tags/python/" rel="tag"># python</a>
-          
-        </div>
+
+      
+
       
 
       
       
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/09/17/mysql-study/" rel="prev" title="在manjaro中安装使用mysql">
-                在manjaro中安装使用mysql <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
+        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -457,11 +440,14 @@
   </article>
 
 
+    
+  </section>
 
-    <div class="post-spread">
-      
-    </div>
-  </div>
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
 
 
           </div>
@@ -469,10 +455,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
@@ -493,17 +475,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -563,22 +536,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-时间函数基础"><span class="nav-number">1.</span> <span class="nav-text">1.时间函数基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-可更改-mutable-与不可更改-immutable-对象"><span class="nav-number">2.</span> <span class="nav-text">2.可更改(mutable)与不可更改(immutable)对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-函数"><span class="nav-number">3.</span> <span class="nav-text">3.函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-命名空间和作用域"><span class="nav-number">4.</span> <span class="nav-text">4.命名空间和作用域</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -708,10 +665,6 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=6.0.0"></script>
-
-
 
   
 
